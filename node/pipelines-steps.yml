@@ -16,6 +16,6 @@ pipelines:
         configuration:
           repositoryName: npm-virtual
           inputSteps:
-            - name: build_npm
+            - name: build_ionic_app
           integrations:
             - name: this_artifactory
