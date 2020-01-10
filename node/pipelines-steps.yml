@@ -10,6 +10,10 @@ pipelines:
             - name: ionic_app_repo
           integrations:
             - name: this_artifactory
+        execution:
+          onComplete:
+            - ls -l "$res_ionic_app_repo_resourcePath/node/client"
+            - printenv
 
       - name: publish_npm
         type: NpmPublish
