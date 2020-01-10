@@ -1,5 +1,5 @@
 pipelines:
-  - name: ionic-app
+  - name: ionic_app
     steps:
       - name: build_ionic_app
         type: NpmBuild
