@@ -4,7 +4,7 @@ resources:
     configuration:
       path: Khazinawaz/jfrog-pipelines-examples
       files:
-        include: \bnode/\client\/.+\b
+        include: /node\/client\/\*/
         exclude: ^$
       gitProvider: nawaz_gh
 
