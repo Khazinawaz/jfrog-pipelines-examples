@@ -9,7 +9,7 @@ pipelines:
           inputResources:
             - name: ionic_app_repo
           integrations:
-            - name: art
+            - name: this_artifactory
 
       - name: publish_npm
         type: NpmPublish
@@ -18,4 +18,4 @@ pipelines:
           inputSteps:
             - name: build_npm
           integrations:
-            - name: art
+            - name: this_artifactory
