@@ -1,1 +1,1 @@
-{"virtualbox":{"/vagrant":{"type":"virtualbox","fsnotify":true,"guestpath":"/vagrant","hostpath":"/Users/khazinawazahamed/Downloads/vagrant-ionic","disabled":false,"__vagrantfile":true}}}
+{"virtualbox":{"/vagrant":{"type":"virtualbox","fsnotify":true,"guestpath":"/vagrant","hostpath":"/Users/khazinawazahamed/Jfrog/jfrog-pipelines-examples/node","disabled":false,"__vagrantfile":true}}}

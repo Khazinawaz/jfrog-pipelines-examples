@@ -1,0 +1,21 @@
+pipelines:
+  - name: ionic-app
+    steps:
+      - name: build_ionic_app
+        type: NpmBuild
+        configuration:
+          repositoryName: npm-virtual
+          sourceLocation: .
+          inputResources:
+            - name: ionic_app_repo
+          integrations:
+            - name: art
+
+      - name: publish_npm
+        type: NpmPublish
+        configuration:
+          repositoryName: npm-virtual
+          inputSteps:
+            - name: build_npm
+          integrations:
+            - name: art

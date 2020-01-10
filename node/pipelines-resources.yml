@@ -1,0 +1,20 @@
+resources:
+  - name: ionic_app_repo
+    type: GitRepo
+    configuration:
+      path: jfrog-pipelines-examples/node/client
+      gitProvider: nawaz_gh
+
+  - name: npm_build_info_publish
+    type: BuildInfo
+    configuration:
+      sourceArtifactory: art
+      buildName: npm_publish
+      buildNumber: 1
+  
+  - name: npm_build_info_promoted
+    type: BuildInfo
+    configuration:
+      sourceArtifactory: art
+      buildName: npm+promote
+      buildNumber: 1
