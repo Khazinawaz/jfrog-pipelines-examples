@@ -3,9 +3,12 @@ resources:
     type: GitRepo
     configuration:
       path: Khazinawaz/jfrog-pipelines-examples
+      branches:
+        include: ^master$
       files:
         include: \bnode\/client\/.+\b
       gitProvider: nawaz_gh
+
 
   - name: npm_build_info_publish
     type: BuildInfo
