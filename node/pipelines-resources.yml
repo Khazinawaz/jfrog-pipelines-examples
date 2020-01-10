@@ -4,7 +4,7 @@ resources:
     configuration:
       path: Khazinawaz/jfrog-pipelines-examples
       files:
-        include: \bnode\/client\/\*/\b
+        include: \bnode\/client\/.+\b
       gitProvider: nawaz_gh
 
   - name: npm_build_info_publish
