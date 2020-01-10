@@ -8,13 +8,13 @@ resources:
   - name: npm_build_info_publish
     type: BuildInfo
     configuration:
-      sourceArtifactory: art
+      sourceArtifactory: this_artifactory
       buildName: npm_publish
       buildNumber: 1
   
   - name: npm_build_info_promoted
     type: BuildInfo
     configuration:
-      sourceArtifactory: art
+      sourceArtifactory: this_artifactory
       buildName: npm+promote
       buildNumber: 1
